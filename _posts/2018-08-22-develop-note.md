@@ -137,7 +137,7 @@ mixins：
 ## 1、跨域问题
 当遇到这样的提示字样时：Failed to load https://aa.xxx.xx/group/listGroup.rjson: The 'Access-Control-Allow-Origin' header has a value 'https://bb.xxx.xx' that is not equal to the supplied origin. Origin 'https://cc.xxx.xx' is therefore not allowed access.
 
-aa.superboss.cc域名下的借口只支持了bb.superboss.cc 没有支持cc.superboss.cc
+aa.boss.cc域名下的借口只支持了bb.boss.cc 没有支持cc.boss.cc
 
 ## 2、safari new Date( ) 时间报错 Invalid Date
 ```sh
