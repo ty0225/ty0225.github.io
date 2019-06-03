@@ -1,3 +1,11 @@
+---
+title: RN的stylesheet简介
+description: RN的stylesheet简介
+categories:
+ - technology
+tags:
+---
+
 
 >一个对于RN的stylesheet的简单描述。
 
@@ -139,7 +147,7 @@ if (hairlineWidth === 0) {
     hairlineWidth = 1 / PixelRatio.get();
 }
 
-//一个绝对定位并铺满其父元素的样式
+//一个绝对定位样式
 const absoluteFillObject = {
     position: 'absolute',
     left: 0,
@@ -185,6 +193,7 @@ module.exports = {
     create<S: Styles>(obj: S): StyleSheet<S> {
         const result: StyleSheet<S> = {};
         for (var key in obj) {
+            //创建之前先对样式进行校验 如不符合则抛出错误
             StyleSheetValidation.validateStyle(key, obj);
             //ReactNativePropRegistry.register返回的是一个uniqueID，
             //这里每一个key都对应一个uniqueID，设置组件样式的时候根据key获取到uniqueID，
@@ -234,5 +243,34 @@ class ReactNativePropRegistry {
 }
 ```
 
+### 五、优势
+
+#### 1、从代码质量角度：
+##### 1）从 render 函数中移除具体的样式内容，可以使代码更清晰易懂；
+##### 2）给样式命名也可以对 render 函数中的组件增加语义化的描述。
+#### 2、从性能角度:
+##### 1）通过 StyleSheet，我们可以通过标志的样式 ID 来引用，而不是每次都要创建一个新的 Style 对象；
+##### 2）Stylesheet 允许样式通过桥接在原生代码和 JavaScript 中传递一次，后面全部通过该 id 进行引用(不过现在该功能还没有实现)。
+
+### 六、跟预编译样式的结合
+
+在利用webpack进行打包编译的项目环境中，可以install一些loader，比如：
+
+```javascript
+    npm install react-native-style-loader less-loader less --save-dev
+```
+
+它提供了一下功能：
+
+- 引入less预编译，可以进行变量的定义和模块化管理
+- 提供了px, vw, vh, rem（和css中的功能类似）, pt（类似于ios中的pt）
+- 支持媒体查询 @media query
+- 支持react native stylesheet 的嵌套
+- 支持margin, padding, box-shadow等的简写
+- 自动将id和class驼峰化
+- 提供了calc 功能
+- 通过import引入样式表
 
 
+参考文档：
+[react-native项目之样式总结](http://www.cnblogs.com/wonyun/p/5481134.html)
