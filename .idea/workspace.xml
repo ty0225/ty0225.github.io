@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="4123dbf0-9998-4e18-985a-4cb7ccb8d517" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2014-06-06-css优先级.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2017-06-06-css优先级.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2014-08-12-FE_functions.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2017-08-12-FE_functions.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2016-10-06-icomoon.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2017-10-06-icomoon.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2017-3-20-nginx.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2017-03-20-nginx.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-05-04-stylesheet.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-04-stylesheet.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_posts/2019-3-14-webpack简易版实现.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-03-14-webpack简易版实现.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_posts/2019-05-31-适用于虚拟dom的表单验证类.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-05-31-适用于虚拟dom的表单验证类.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,28 +19,27 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/_posts/2019-05-31-适用于虚拟dom的表单验证类.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="311">
-                <caret line="561" column="5" lean-forward="true" selection-start-line="561" selection-start-column="5" selection-end-line="562" selection-end-column="10" />
-                <folding>
-                  <element signature="n#!!doc" expanded="true" />
-                  <element signature="e#68#122#0" expanded="true" />
-                </folding>
+              <first_editor relative-caret-position="210">
+                <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="13" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2013-12-24-elements.md">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-06-05-ES7修饰器.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="238">
-                <caret line="56" selection-start-line="56" selection-end-line="60" selection-end-column="40" />
+              <first_editor relative-caret-position="279">
+                <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
+                <folding>
+                  <element signature="e#0#43#1" expanded="true" />
+                </folding>
               </first_editor>
               <second_editor />
             </state>
@@ -133,11 +127,14 @@
         <option value="$PROJECT_DIR$/_posts/2017-03-20-nginx.md" />
         <option value="$PROJECT_DIR$/_posts/2019-05-21-RN的InteractionManager.md" />
         <option value="$PROJECT_DIR$/_posts/2019-05-31-适用于虚拟dom的表单验证类.md" />
+        <option value="$PROJECT_DIR$/_posts/2016-06-05-ES7修饰器.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-06-05-ES7修饰器.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="24" />
+    <option name="x" value="8" />
+    <option name="y" value="23" />
     <option name="width" value="1224" />
     <option name="height" value="777" />
   </component>
@@ -146,6 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -162,7 +160,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -267,7 +264,8 @@
       <workItem from="1553500622455" duration="8151000" />
       <workItem from="1555599146337" duration="479000" />
       <workItem from="1557752707442" duration="6523000" />
-      <workItem from="1558315216886" duration="27782000" />
+      <workItem from="1558315216886" duration="30766000" />
+      <workItem from="1559723084706" duration="4810000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1535862099300</created>
@@ -287,7 +285,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="378568000" />
+    <option name="totallyTimeSpent" value="386362000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -299,10 +297,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="23" width="1224" height="777" extended-state="6" />
+    <frame x="-5" y="23" width="1224" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2468828" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16957606" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -549,21 +547,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="324">
-            <caret line="39" column="10" selection-start-line="39" selection-start-column="4" selection-end-line="39" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2017-03-20-nginx.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="7005">
@@ -614,21 +597,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2013-12-24-elements.md">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="118" column="25" selection-start-line="118" selection-start-column="15" selection-end-line="118" selection-end-column="25" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="238">
-            <caret line="56" selection-start-line="56" selection-end-line="60" selection-end-column="40" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-29-RN开发笔记.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -639,14 +607,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="249">
+            <caret line="34" column="39" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2013-12-24-elements.md">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="118" column="25" selection-start-line="118" selection-start-column="15" selection-end-line="118" selection-end-column="25" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="154">
+            <caret line="79" column="21" lean-forward="true" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/_posts/2019-05-31-适用于虚拟dom的表单验证类.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="311">
-            <caret line="561" column="5" lean-forward="true" selection-start-line="561" selection-start-column="5" selection-end-line="562" selection-end-column="10" />
+          <first_editor relative-caret-position="210">
+            <caret line="14" selection-start-line="14" selection-end-line="14" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-06-05-ES7修饰器.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="279">
+            <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
             <folding>
-              <element signature="n#!!doc" expanded="true" />
-              <element signature="e#68#122#0" expanded="true" />
+              <element signature="e#0#43#1" expanded="true" />
             </folding>
           </first_editor>
           <second_editor />
