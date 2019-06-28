@@ -132,6 +132,30 @@ mixins：
 
 ### $refs相对document.getElementById的方法，会减少获取dom节点的消耗。
 
+## 11、computed中利用mapState监听state中复杂数据类型问题：
+
+### 在开发某项目时，发现state中定义了个对象，但是在组件中监听时，没有监听到其变化，仔细查阅文档后，尝试用watch进行二次监听，并将其deep属性设置为true，问题解决，代码如下：
+
+```javascript
+computed: {
+    ...mapState({
+        //...
+        quantityChartData: state => state.modelPrice.quantityChartData
+    })
+},
+//...
+watch: {
+    quantityChartData: {
+        //若监听的数据是对象 需要用watch辅助配合
+        handler(val){
+            this.renderChart();
+        },
+        deep: true
+    }
+},
+
+```
+
 > 其他问题：
 
 ## 1、跨域问题
