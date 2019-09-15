@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4123dbf0-9998-4e18-985a-4cb7ccb8d517" name="Default" comment="" />
+    <list default="true" id="4123dbf0-9998-4e18-985a-4cb7ccb8d517" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/_posts/2019-09-09-cookie总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/_posts/2019-09-09-cookie总结.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -16,12 +18,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_posts/2017-11-02-cookie总结.md">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/_posts/2019-09-09-cookie总结.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="300">
-                <caret line="20" selection-start-line="20" selection-end-line="20" />
+              <first_editor relative-caret-position="159">
+                <caret line="143" lean-forward="true" selection-start-line="143" selection-end-line="143" />
               </first_editor>
               <second_editor />
             </state>
@@ -40,12 +42,12 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="321">
-                <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+              <first_editor relative-caret-position="336">
+                <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
               </first_editor>
               <second_editor />
             </state>
@@ -56,7 +58,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>2.5.2</find>
       <find>gist</find>
       <find>mysvr</find>
       <find>proxy_pass</find>
@@ -86,6 +87,7 @@
       <find>jau</find>
       <find>丝瓜</find>
       <find>todo</find>
+      <find>end</find>
     </findStrings>
     <replaceStrings>
       <replace>javascript</replace>
@@ -103,7 +105,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/_posts/2014-08-12-FE_functions.md" />
         <option value="$PROJECT_DIR$/_config.yml" />
         <option value="$PROJECT_DIR$/_posts/2017-09-26-mobile.md" />
         <option value="$PROJECT_DIR$/_posts/2014-06-06-css优先级.md" />
@@ -154,6 +155,7 @@
         <option value="$PROJECT_DIR$/_posts/2017-11-02.cookie总结.md" />
         <option value="$PROJECT_DIR$/_posts/2019-08-06-js设计模式笔记.md" />
         <option value="$PROJECT_DIR$/_posts/2017-11-02-cookie总结.md" />
+        <option value="$PROJECT_DIR$/_posts/2019-09-09-cookie总结.md" />
       </list>
     </option>
   </component>
@@ -174,6 +176,11 @@
             <path>
               <item name="ty0225.github.io" type="b2602c69:ProjectViewProjectNode" />
               <item name="ty0225.github.io" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ty0225.github.io" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ty0225.github.io" type="462c0819:PsiDirectoryNode" />
+              <item name="_posts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ty0225.github.io" type="b2602c69:ProjectViewProjectNode" />
@@ -311,7 +318,7 @@
       <workItem from="1566370302452" duration="14280000" />
       <workItem from="1566870649745" duration="18124000" />
       <workItem from="1567407111632" duration="17116000" />
-      <workItem from="1567671620575" duration="74952000" />
+      <workItem from="1567671620575" duration="75334000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1535862099300</created>
@@ -331,7 +338,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="629209000" />
+    <option name="totallyTimeSpent" value="629591000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,7 +353,7 @@
     <frame x="-1" y="23" width="1237" height="777" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.140625" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.140625" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Gulp" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -358,7 +365,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32911393" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3051095" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3051095" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -877,21 +884,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_posts/2017-11-02-cookie总结.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="300">
-            <caret line="20" selection-start-line="20" selection-end-line="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="321">
-            <caret line="33" column="18" lean-forward="true" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <first_editor relative-caret-position="336">
+            <caret line="34" column="28" lean-forward="true" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
           </first_editor>
           <second_editor />
         </state>
@@ -899,6 +896,16 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_posts/2019-09-09-cookie总结.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="159">
+            <caret line="143" lean-forward="true" selection-start-line="143" selection-end-line="143" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
