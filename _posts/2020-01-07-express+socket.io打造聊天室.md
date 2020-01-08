@@ -162,7 +162,15 @@ io.on('connection', (socket)=>{
 
 ```
 
+除此之外，还支持窗口抖动、发送表情等功能
 
-
-
-
+```javascript
+socket.on('shake', ()=> {
+    socket.emit('shake', {
+        name: '您'
+    });
+    socket.broadcast.emit('shake', {
+        name: socket.nickname
+    });
+});
+```
