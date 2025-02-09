@@ -1,0 +1,32 @@
+/*
+ * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+/******/ (() => { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/circle-progress/index.js":
+/*!**************************************!*\
+  !*** ./src/circle-progress/index.js ***!
+  \**************************************/
+/***/ (() => {
+
+eval("class CircleProgress {\n  ctx;\n  width = 300;\n  height = 300;\n  needScale = false; // 是否需要翻转\n  circleId = 'circle_progress';\n  lineWidth = 30; // 圆环宽度\n  circleFrontStartColor = '#88E6FF'; //圆环前半部分初始颜色\n  circleFrontEndColor = '#0069FF'; //圆环前半部分结束颜色\n  circleBackStartColor = '#88E6FF'; //圆环后半部分初始颜色\n  circleBackEndColor = '#369bff'; //圆环后半部分结束颜色\n  progress = 0.8001; // 百分比数据\n  constructor() {}\n  init() {\n    const box = document.getElementById(this.circleId);\n    this.width = box?.offsetWidth - 20;\n    this.height = box?.offsetHeight - 20;\n    this.needScale = false;\n    setTimeout(() => {\n      this.renderData();\n    });\n  }\n  renderData() {\n    this.ctx && this.ctx.clearRect(0, 0, this.width, this.height);\n    this.renderCircle();\n  }\n\n  /*画曲线*/\n  drawCircle(circleObj) {\n    let ctx = circleObj.ctx;\n    ctx.beginPath();\n    //设定曲线粗细度\n    ctx.lineWidth = circleObj.lineWidth;\n    //给曲线着色\n    ctx.strokeStyle = circleObj.color;\n    //连接处样式\n    // ctx.lineCap = 'round';\n    ctx.arc(circleObj.x, circleObj.y, circleObj.radius, circleObj.startAngle, circleObj.endAngle, false);\n    //给环着色\n    ctx.stroke();\n    ctx.closePath();\n  }\n  renderCircle() {\n    const canvas = document.getElementById(this.circleId);\n    this.needScale = this.progress < 0; // 如果是负数，要进行翻转\n    this.ctx = canvas.getContext('2d');\n    // 这里判断上次如果翻转过，就再翻转一次\n    if (this.ctx.hadScale) {\n      this.ctx.scale(-1, 1);\n      this.ctx.translate(-this.width, 0);\n      this.ctx.hadScale = false;\n    }\n    this.renderText();\n    const lineWidth = this.lineWidth; // 环的宽度\n    const radius = (this.width - this.lineWidth) / 2; // 半径\n    // 开始圆环\n    let circleObj = {\n      ctx: this.ctx,\n      x: this.width / 2,\n      // 圆心坐标\n      y: this.height / 2,\n      // 圆心坐标\n      radius: radius,\n      lineWidth: lineWidth\n    };\n    // console.log('width', this.width);\n    /*渐变的圆环*/\n    /*开始的度数-从上一个结束的位置开始*/\n    circleObj.startAngle = 0; // 注意这里的0是3点钟方向，而非12点方向，和数学里的不一样\n    /*结束的度数*/\n    circleObj.endAngle = Math.PI * 2;\n\n    /* 底层圆弧的渐变设置 */\n    let grd = this.ctx.createRadialGradient(circleObj.x, circleObj.y, 0, circleObj.x, circleObj.x, circleObj.y);\n    grd.addColorStop((radius - lineWidth) / radius, '#D8F0F6');\n    grd.addColorStop((radius - lineWidth / 2) / radius, '#ffffff');\n    grd.addColorStop(1, '#D8F0F6');\n    //使用径向渐变\n    this.ctx.fillStyle = grd;\n    circleObj.color = grd;\n    this.drawCircle(circleObj);\n\n    /*有色的圆环*/\n    /*从-90度的地方开始画*/\n    circleObj.startAngle = -0.5 * Math.PI; //把起始点改成数学里的12点方向\n    /*从当前度数减去-90度*/\n    let holeCicle = 2 * Math.PI;\n    let jiaodu = Math.abs(Number(this.progress)) * 360; //圆弧的角度\n    // 如果是负数，要进行翻转\n    if (this.needScale) {\n      this.ctx.scale(-1, 1);\n      this.ctx.translate(-this.width, 0);\n      this.ctx.hadScale = true; // 翻转过要进行标记，方便下次渲染判断\n    }\n\n    if (jiaodu <= 180) {\n      let x1 = circleObj.x + radius * Math.sin(jiaodu * Math.PI / 180);\n      let y1 = circleObj.y - radius + (radius - radius * Math.cos(jiaodu * Math.PI / 180));\n      circleObj.endAngle = Math.abs(Number(this.progress)) * holeCicle - 0.5 * Math.PI;\n      const gnt1 = this.ctx.createLinearGradient(0, 0, x1, y1);\n      gnt1.addColorStop(0, this.circleFrontStartColor);\n      gnt1.addColorStop(1, this.circleFrontEndColor);\n      circleObj.color = gnt1;\n      this.drawCircle(circleObj);\n    } else {\n      const x1 = circleObj.x + radius * Math.sin(180 * Math.PI / 180);\n      const y1 = circleObj.y - radius + (radius - radius * Math.cos(180 * Math.PI / 180));\n      // console.log('x1', x1, y1);\n      circleObj.endAngle = 1.5 * Math.PI + 180 * holeCicle;\n      const gnt1 = this.ctx.createLinearGradient(0, 0, x1, y1);\n      gnt1.addColorStop(0, this.circleBackStartColor);\n      gnt1.addColorStop(1, this.circleBackEndColor);\n      this.drawCircle({\n        ctx: this.ctx,\n        x: this.width / 2,\n        // 圆心坐标\n        y: this.height / 2,\n        radius: radius,\n        lineWidth: lineWidth,\n        // 环的宽度\n        startAngle: -0.5 * Math.PI,\n        endAngle: 0.5 * Math.PI,\n        color: gnt1\n      });\n      const x2 = circleObj.x + radius * Math.sin(jiaodu * Math.PI / 180);\n      const y2 = circleObj.y - radius + (radius - radius * Math.cos(jiaodu * Math.PI / 180));\n      // console.log('x2', x2, y2);\n      const gnt2 = this.ctx.createLinearGradient(x1, y1, x2, y2);\n      gnt2.addColorStop(0, this.circleBackEndColor);\n      gnt2.addColorStop(1, this.circleFrontEndColor);\n      this.drawCircle({\n        ctx: this.ctx,\n        x: this.width / 2,\n        // 圆心坐标\n        y: this.height / 2,\n        radius: radius,\n        lineWidth: lineWidth,\n        // 环的宽度\n        startAngle: 0.5 * Math.PI,\n        endAngle: (Math.abs(Number(this.progress)) * 2 - 0.5) * Math.PI,\n        color: gnt2\n      });\n    }\n  }\n\n  // 百分比转换\n  toPercent(num) {\n    const str = Number(num * 100).toFixed(2);\n    return str + '%';\n  }\n  renderText() {\n    this.ctx.font = '28px PingFangSC-Medium';\n    this.ctx.fillStyle = '#0F76FF';\n    this.ctx.fillText(this.toPercent(this.progress), (this.width - 80) / 2, this.width * 0.51);\n  }\n}\nnew CircleProgress().init();\n\n//# sourceURL=webpack://three/./src/circle-progress/index.js?");
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module can't be inlined because the eval devtool is used.
+/******/ 	var __webpack_exports__ = {};
+/******/ 	__webpack_modules__["./src/circle-progress/index.js"]();
+/******/ 	
+/******/ })()
+;

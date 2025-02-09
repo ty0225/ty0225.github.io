@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>3D地图飞线</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			html,
+            body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                overflow: hidden;
+            }
+		</style>
+	<script defer src="lineEarth.js"></script></head>
+	<body>
+        <div id="container"></div>
+        <script type="javascript" src="index.js"></script>
+        <script id="vertex-shader" type="x-shader/x-vertex">
+            varying vec3 vPosition;
+            varying vec4 vColor;
+            void main() {
+                vPosition = position;
+                vColor = vec4(color, 1.0);
+                gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+            }
+        </script>
+        
+        <script id="fragment-shader" type="x-shader/x-fragment">
+            uniform vec3 targetPos; // 目标位置
+            uniform float vLength;  // 距离
+        
+            uniform float time;
+            varying vec3 vPosition;
+            varying vec4 vColor;
+            void main() {
+                float dist = distance(vPosition, targetPos);
+        
+                vec4 color = vec4(vColor);
+                float p = dist/vLength * 6.0 + time * 1.0;
+        
+        
+                if (p < 3.1415926/2.0){
+                    p = 0.0;
+                }
+                if (p > 3.1415926*2.0){
+                    p = 0.0;
+                }
+        
+                float a = sin(p);
+                color.a = a;
+        
+                gl_FragColor = color;
+            }
+        </script>
+	</body>
+</html>

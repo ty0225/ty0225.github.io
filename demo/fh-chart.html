@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>奉化图谱</title>
+<script defer src="fenghuaChart.js"></script></head>
+<body>
+  <div class="fenghua-control-chart">
+    <div class="fenghua-control-chart-header">
+      <div class="title">
+        <img src="https://img.alicdn.com/imgextra/i4/O1CN01N0LMzw1zsFmTTExke_!!6000000006769-2-tps-886-206.png" alt="" />
+      </div>
+      <div class="search">
+        <div class="search-item">
+          <label>
+            <img
+              src="https://img.alicdn.com/imgextra/i3/O1CN01xbj5BL1kQ7DAcNIJg_!!6000000004677-2-tps-178-38.png"
+              alt=""
+            />
+          </label>
+          <!-- <select
+            value="请选择"
+            nzDropdownClassName="fenghua-control-chart-select"
+            (ngModelChange)="selectCurrentControl($event, true)"
+          >
+            <option *ngFor="let item of allData.controlData" [nzValue]="item.id" [nzLabel]="item.name"></nz-option>
+          </select> -->
+        </div>
+        <div class="search-item">
+          <label class="width-45">
+            <img
+              src="https://img.alicdn.com/imgextra/i2/O1CN01g897ck1rN5uQC0gOX_!!6000000005618-2-tps-90-38.png"
+              alt=""
+            />
+          </label>
+          <!-- <nz-tree-select
+            [nzHideUnMatched]="true"
+            nzDropdownClassName="fenghua-control-chart-select"
+            [ngModel]="currentCause"
+            [nzNodes]="selectCauseTree"
+            [nzExpandedKeys]="[0]"
+            [nzAllowClear]="false"
+            [nzShowSearch]="true"
+            (ngModelChange)="selectCurrentCause($event)"
+          ></nz-tree-select> -->
+        </div>
+      </div>
+    </div>
+    <div class="fenghua-control-chart-body">
+      <video
+        preload="metadata"
+        muted
+        loop="loop"
+        crossorigin="anonymous"
+        playsInline
+        autoPlay
+        src="https://cloud.video.taobao.com/play/u/null/p/1/e/6/t/1/402723061335.mp4?SBizCode=xiaoer"
+        tabIndex="-1"
+      ></video>
+    </div>
+    <!-- <div class="fenghua-control-chart-loading" *ngIf="fetching">
+      <p>数据加载中...</p>
+    </div> -->
+  </div>
+  <div id="fenghua-control-chart-scripts"></div>
+  <script type="javascript" src="./index.ts"></script>
+</body>
+</html>

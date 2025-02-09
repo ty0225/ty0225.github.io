@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Three.js3D旋转轮博</title>
+  <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+  </style>
+<script defer src="picture3DRotate.js"></script></head>
+<body>
+    <div class="htmleaf-container">
+    
+        <h1>3D 轮播 demo</h1>
+        <h2>3张图片</h2>
+        <div class="carousel">
+            <figure style="transform-origin: 50% 50% -91.4514px; transform: rotateY(-8.37758rad);">
+                <img src="https://img.alicdn.com/imgextra/i2/O1CN01QGOjL724nHbdW9YnS_!!6000000007435-0-tps-1619-1171.jpg" alt="" style="padding: 0px;">
+                <img src="https://img.alicdn.com/imgextra/i4/O1CN01OUT0AP1qOdhHYHXxL_!!6000000005486-0-tps-1886-1055.jpg" alt="" style="padding: 0px; transform-origin: 50% 50% -91.4514px; transform: rotateY(2.0944rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01odHH4S1mhdf7ThVQ6_!!6000000004986-2-tps-965-866.png" alt="" style="padding: 0px; transform-origin: 50% 50% -91.4514px; transform: rotateY(4.18879rad);">
+            </figure>
+            <nav>
+                <button class="nav prev">前一张</button>
+                <button class="nav next">后一张</button>
+            </nav>
+        </div>
+    
+        <h2>4 张图片</h2>
+        <div class="carousel">
+            <figure style="transform-origin: 50% 50% -158.399px; transform: rotateY(-6.28319rad);">
+                <img src="https://img.alicdn.com/imgextra/i2/O1CN01QGOjL724nHbdW9YnS_!!6000000007435-0-tps-1619-1171.jpg" alt="" style="padding: 0px;">
+                <img src="https://img.alicdn.com/imgextra/i4/O1CN01OUT0AP1qOdhHYHXxL_!!6000000005486-0-tps-1886-1055.jpg" alt="" style="padding: 0px; transform-origin: 50% 50% -158.399px; transform: rotateY(1.5708rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01odHH4S1mhdf7ThVQ6_!!6000000004986-2-tps-965-866.png" alt="" style="padding: 0px; transform-origin: 50% 50% -158.399px; transform: rotateY(3.14159rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01qam1oa1O3HzOTlarP_!!6000000001649-2-tps-1414-1362.png" alt="" style="padding: 0px; transform-origin: 50% 50% -158.399px; transform: rotateY(4.71239rad);">
+            </figure>
+            <nav>
+                <button class="nav prev">前一张</button>
+                <button class="nav next">后一张</button>
+            </nav>
+        </div>
+    
+        <h2>8 张图片</h2>
+        <div class="carousel">
+            <figure style="transform-origin: 50% 50% -382.408px; transform: rotateY(-3.14159rad);">
+                    <img src="https://img.alicdn.com/imgextra/i2/O1CN01QGOjL724nHbdW9YnS_!!6000000007435-0-tps-1619-1171.jpg" alt="" style="padding: 0px;">
+                <img src="https://img.alicdn.com/imgextra/i4/O1CN01OUT0AP1qOdhHYHXxL_!!6000000005486-0-tps-1886-1055.jpg" alt="" style="padding: 0px; transform-origin: 50% 50% -382.408px; transform: rotateY(0.785398rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01odHH4S1mhdf7ThVQ6_!!6000000004986-2-tps-965-866.png" alt="" style="padding: 0px; transform-origin: 50% 50% -382.408px; transform: rotateY(1.5708rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01qam1oa1O3HzOTlarP_!!6000000001649-2-tps-1414-1362.png" alt="" style="padding: 0px; transform-origin: 50% 50% -382.408px; transform: rotateY(2.35619rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01FJKk5w1Vj9UUAUkmp_!!6000000002688-0-tps-2118-1486.jpg" alt="" style="padding: 0px; transform-origin: 50% 50% -382.408px; transform: rotateY(3.14159rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN016tEjdF1RPg9d0TEUT_!!6000000002104-0-tps-1116-673.jpg" alt="" style="padding: 0px; transform-origin: 50% 50% -382.408px; transform: rotateY(3.92699rad);">
+                <img src="https://img.alicdn.com/imgextra/i1/O1CN01Jw6XqE1dnkMBvaGhL_!!6000000003781-0-tps-958-630.jpg" alt="" style="padding: 0px; transform-origin: 50% 50% -382.408px; transform: rotateY(4.71239rad);">
+                <img src="https://img.alicdn.com/imgextra/i2/O1CN01d6IpyK23h2Zt4otwI_!!6000000007286-0-tps-1354-1134.jpg" alt="" style="padding: 0px; transform-origin: 50% 50% -382.408px; transform: rotateY(5.49779rad);">
+            </figure>
+            <nav>
+                <button class="nav prev">前一张</button>
+                <button class="nav next">后一张</button>
+            </nav>
+        </div>
+    
+        <h2>8张图片, 间隔 20px</h2>
+        <div class="carousel" data-gap="20">
+            <figure style="transform-origin: 50% 50% -382.408px; transform: rotateY(-3.14159rad);">
+                    <img src="https://img.alicdn.com/imgextra/i2/O1CN01QGOjL724nHbdW9YnS_!!6000000007435-0-tps-1619-1171.jpg" alt="" style="padding: 20px;">
+                <img src="https://img.alicdn.com/imgextra/i4/O1CN01OUT0AP1qOdhHYHXxL_!!6000000005486-0-tps-1886-1055.jpg" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(0.785398rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01odHH4S1mhdf7ThVQ6_!!6000000004986-2-tps-965-866.png" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(1.5708rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01qam1oa1O3HzOTlarP_!!6000000001649-2-tps-1414-1362.png" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(2.35619rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01FJKk5w1Vj9UUAUkmp_!!6000000002688-0-tps-2118-1486.jpg" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(3.14159rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN016tEjdF1RPg9d0TEUT_!!6000000002104-0-tps-1116-673.jpg" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(3.92699rad);">
+                <img src="https://img.alicdn.com/imgextra/i1/O1CN01Jw6XqE1dnkMBvaGhL_!!6000000003781-0-tps-958-630.jpg" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(4.71239rad);">
+                <img src="https://img.alicdn.com/imgextra/i2/O1CN01d6IpyK23h2Zt4otwI_!!6000000007286-0-tps-1354-1134.jpg" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(5.49779rad);">
+            </figure>
+            <nav>
+                <button class="nav prev">前一张</button>
+                <button class="nav next">后一张</button>
+            </nav>
+        </div>
+    
+        <h2>8张图片, 间隔 80px</h2>
+        <div class="carousel" data-gap="80">
+            <figure style="transform-origin: 50% 50% -382.408px; transform: rotateY(0rad);">
+                    <img src="https://img.alicdn.com/imgextra/i2/O1CN01QGOjL724nHbdW9YnS_!!6000000007435-0-tps-1619-1171.jpg" alt="" style="padding: 80px;">
+                <img src="https://img.alicdn.com/imgextra/i4/O1CN01OUT0AP1qOdhHYHXxL_!!6000000005486-0-tps-1886-1055.jpg" alt="" style="padding: 80px; transform-origin: 50% 50% -382.408px; transform: rotateY(0.785398rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01odHH4S1mhdf7ThVQ6_!!6000000004986-2-tps-965-866.png" alt="" style="padding: 80px; transform-origin: 50% 50% -382.408px; transform: rotateY(1.5708rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01qam1oa1O3HzOTlarP_!!6000000001649-2-tps-1414-1362.png" alt="" style="padding: 80px; transform-origin: 50% 50% -382.408px; transform: rotateY(2.35619rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01FJKk5w1Vj9UUAUkmp_!!6000000002688-0-tps-2118-1486.jpg" alt="" style="padding: 80px; transform-origin: 50% 50% -382.408px; transform: rotateY(3.14159rad);">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN016tEjdF1RPg9d0TEUT_!!6000000002104-0-tps-1116-673.jpg" alt="" style="padding: 80px; transform-origin: 50% 50% -382.408px; transform: rotateY(3.92699rad);">
+                <img src="https://img.alicdn.com/imgextra/i1/O1CN01Jw6XqE1dnkMBvaGhL_!!6000000003781-0-tps-958-630.jpg" alt="" style="padding: 80px; transform-origin: 50% 50% -382.408px; transform: rotateY(4.71239rad);">
+                <img src="https://img.alicdn.com/imgextra/i2/O1CN01d6IpyK23h2Zt4otwI_!!6000000007286-0-tps-1354-1134.jpg" alt="" style="padding: 80px; transform-origin: 50% 50% -382.408px; transform: rotateY(5.49779rad);">
+            </figure>
+            <nav>
+                <button class="nav prev">前一张</button>
+                <button class="nav next">后一张</button>
+            </nav>
+        </div>
+    
+        <h2>8张图片, 间隔 20px, 隐藏背面的图</h2>
+        <div class="carousel" data-gap="20" data-bfc="">
+            <figure style="transform-origin: 50% 50% -382.408px; transform: rotateY(0rad);">
+                <img src="https://img.alicdn.com/imgextra/i2/O1CN01QGOjL724nHbdW9YnS_!!6000000007435-0-tps-1619-1171.jpg" alt="" style="padding: 20px; backface-visibility: hidden;">
+                <img src="https://img.alicdn.com/imgextra/i4/O1CN01OUT0AP1qOdhHYHXxL_!!6000000005486-0-tps-1886-1055.jpg" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(0.785398rad); backface-visibility: hidden;">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01odHH4S1mhdf7ThVQ6_!!6000000004986-2-tps-965-866.png" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(1.5708rad); backface-visibility: hidden;">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01qam1oa1O3HzOTlarP_!!6000000001649-2-tps-1414-1362.png" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(2.35619rad); backface-visibility: hidden;">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN01FJKk5w1Vj9UUAUkmp_!!6000000002688-0-tps-2118-1486.jpg" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(3.14159rad); backface-visibility: hidden;">
+                <img src="https://img.alicdn.com/imgextra/i3/O1CN016tEjdF1RPg9d0TEUT_!!6000000002104-0-tps-1116-673.jpg" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(3.92699rad); backface-visibility: hidden;">
+                <img src="https://img.alicdn.com/imgextra/i1/O1CN01Jw6XqE1dnkMBvaGhL_!!6000000003781-0-tps-958-630.jpg" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(4.71239rad); backface-visibility: hidden;">
+                <img src="https://img.alicdn.com/imgextra/i2/O1CN01d6IpyK23h2Zt4otwI_!!6000000007286-0-tps-1354-1134.jpg" alt="" style="padding: 20px; transform-origin: 50% 50% -382.408px; transform: rotateY(5.49779rad); backface-visibility: hidden;">
+            </figure>
+            <nav>
+                <button class="nav prev">前一张</button>
+                <button class="nav next">后一张</button>
+            </nav>
+        </div>
+        
+    </div>
+    </body>
+</html>

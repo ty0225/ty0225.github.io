@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three.js图片全屏特效</title>
+<script defer src="picture3DScale.js"></script></head>
+
+<body class="demo-1">
+    <main>
+        <!-- <div class="frame">
+            <div class="frame__title-wrap">
+                <h1 class="frame__title">Grid to Fullscreen Animations</h1>
+            </div>
+            <div class="frame__demos">
+                <span class="frame__demos-title">examples:</span>
+                <a href="index.html" class="frame__demo frame__demo--current">01</a>
+                <a href="index2.html" class="frame__demo">02</a>
+                <a href="index3.html" class="frame__demo">03</a>
+                <a href="index4.html" class="frame__demo">04</a>
+                <a href="index5.html" class="frame__demo">05</a>
+                <a href="index6.html" class="frame__demo">06</a>
+            </div>
+        </div> -->
+        <!-- <div class="deco">
+            <div class="deco__text">Connect 2019</div>
+            <div class="deco__text">Connect 2020</div>
+            <div class="deco__text">Connect 2020</div>
+            <div class="deco__text">Connect 2020</div>
+            <div class="deco__text">Connect 2020</div>
+        </div> -->
+        <div id="app" style="z-index: 0;"><canvas width="1670" height="1714"
+                style="width: 835px; height: 857px;"></canvas></div>
+        <div class="grid" id="itemsWrapper" style="z-index: 1;">
+            <figure class="grid__item">
+                <img class="grid__item-img" src="https://img.alicdn.com/imgextra/i1/O1CN018i4D4A1TIvfWztjl1_!!6000000002360-0-tps-1362-1038.jpg" alt="An image" style="opacity: 1;">
+                <img class="grid__item-img grid__item-img--large" src="https://img.alicdn.com/imgextra/i1/O1CN018i4D4A1TIvfWztjl1_!!6000000002360-0-tps-1362-1038.jpg">
+                <figcaption class="grid__item-caption">
+                    <h2 class="grid__item-title">Paris</h2>
+                    <p class="grid__item-text">
+                        If you are lucky enough to have lived in Paris as a young man,
+                        then wherever you go for the rest of your life it stays with you,
+                        for Paris is a moveable feast.
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="grid__item">
+                <img class="grid__item-img" src="https://img.alicdn.com/imgextra/i1/O1CN01eOom541OPH4QYcPSf_!!6000000001697-0-tps-1296-1246.jpg" alt="An image" style="opacity: 1;">
+                <img class="grid__item-img grid__item-img--large" src="https://img.alicdn.com/imgextra/i1/O1CN01eOom541OPH4QYcPSf_!!6000000001697-0-tps-1296-1246.jpg">
+                <figcaption class="grid__item-caption">
+                    <h2 class="grid__item-title">Barcelona</h2>
+                    <p class="grid__item-text">
+                        We crossed spacious streets, with building resembling palaces, in
+                        La Rambla promenade; the shops were well illuminated and there was
+                        movement and life.
+                    </p>
+                </figcaption>
+            </figure>
+            <figure class="grid__item">
+                <img class="grid__item-img" src="https://img.alicdn.com/imgextra/i4/O1CN01dZBKc51WzTId5A4SY_!!6000000002859-0-tps-2048-1024.jpg" alt="An image">
+                <img class="grid__item-img grid__item-img--large" src="https://img.alicdn.com/imgextra/i4/O1CN01dZBKc51WzTId5A4SY_!!6000000002859-0-tps-2048-1024.jpg">
+                <figcaption class="grid__item-caption">
+                    <h2 class="grid__item-title">Rome</h2>
+                    <p class="grid__item-text">
+                        And that is… how they are. So terribly physically all over one
+                        another. They pour themselves one over the other like so much
+                        melted butter over parsnips.
+                    </p>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="fullview">
+            <div class="fullview__item">
+                <h2 class="fullview__item-title"
+                    style="transform: translate(5%, 0%) matrix(1, 0, 0, 1, 0, 0); opacity: 0;">Paris</h2>
+            </div>
+            <div class="fullview__item">
+                <h2 class="fullview__item-title"
+                    style="transform: translate(5%, 0%) matrix(1, 0, 0, 1, 0, 0); opacity: 0;">Barcelona</h2>
+            </div>
+            <div class="fullview__item">
+                <h2 class="fullview__item-title">Rome</h2>
+            </div>
+            <button class="fullview__close" aria-label="Close preview"
+                style="transform: matrix(0, 0, 0, 0, 0, 0); opacity: 0;"><svg aria-hidden="true" width="24"
+                    height="22px" viewBox="0 0 24 22">
+                    <path
+                        d="M11 9.586L20.192.393l1.415 1.415L12.414 11l9.193 9.192-1.415 1.415L11 12.414l-9.192 9.193-1.415-1.415L9.586 11 .393 1.808 1.808.393 11 9.586z">
+                    </path>
+                </svg></button>
+        </div>
+    </main>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <!-- <script src="js/imagesloaded.pkgd.min.js"></script> -->
+    <!-- <script src="js/three.min.js"></script> -->
+    <!-- <script src="js/TweenLite.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CSSRulePlugin.min.js"></script>
+    <!-- <script src="js/CSSPlugin.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/EasePack.min.js"></script>
+    <!-- <script src="js/EasePack.min.js"></script> -->
+    <!-- <script src="GridToFullscreenEffect.js"></script> -->
+    <!-- <script src="js/basicDemo.js"></script> -->
+
+    <script src="index.js"></script>
+</body>
+
+</html>

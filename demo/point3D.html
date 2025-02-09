@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d 散点图</title>
+<script defer src="point3D.js"></script></head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    body{ 
+        width: 100%;
+        height: 100%;
+    }
+    .chart-scatter3d-container {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+    .chart-scatter3d-container .chart-scatter3d {
+        width: 100%;
+        height: 100%;
+    }
+    .chart-scatter3d-container .chart-scatter3d .legend {
+        position: absolute;
+        bottom: 0px;
+        right: 22px;
+        width: 100px;
+    }
+    .chart-scatter3d-container .chart-scatter3d .legend ul li {
+        height: 20px;
+        line-height: 20px;
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        color: rgba(23,25,28,0.71);
+        margin-bottom: 8px;
+    }
+    .chart-scatter3d-container .chart-scatter3d .legend ul li .point {
+        display: inline-block;
+        margin-right: 8px;
+        width: 8px;
+        height: 8px;
+        border-radius: 4px;
+    }
+</style>
+<body>
+    <div class="chart-scatter3d-container">
+        <div id="scatter_container" class="chart-scatter3d"></div>
+        <div class="legend">
+            <ul>
+              <li>
+                <span class="point" style="background-color: rgba(255, 15, 29, 0.9)"></span>
+                <span>高风险</span>
+              </li>
+              <li>
+                <span class="point" style="background-color: rgba(239, 159, 0, 0.9)"></span>
+                <span>中风险</span>
+              </li>
+              <li>
+                <span class="point" style="background-color: rgba(35, 179, 147, 0.9)"></span>
+                <span>低风险</span>
+              </li>
+            </ul>
+          </div>
+      </div>
+
+    <!-- <script type="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.0/echarts.min.js"></script> -->
+    <script type="javascript" src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>图像渐隐渐显</title>
+    <style>
+        body {
+            margin:0;
+            overflow:hidden;
+            background: black;
+        }
+
+        img {
+            display:none;
+        }
+        .loading {
+            color: #fff;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin: -100px -50px;
+            width: 200px;
+            height: 100px;
+            text-align: center;
+        }
+    </style>
+<script defer src="pictureFade.js"></script></head>
+<body>
+
+<div class="loading" id="loading">鼠标上下滚动切换图片，图片加载中。。。</div>
+
+</body>
+</html>

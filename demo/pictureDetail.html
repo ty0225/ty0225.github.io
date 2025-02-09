@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>卡片详情展开效果</title>
+<link rel="stylesheet" href="./src/style.css">
+
+<script defer src="pictureDetail.js"></script></head>
+<body>
+<!-- partial:index.partial.html -->
+<!--
+  Please note: this code is in no way ready to be used as is in production on your website. It will need to be adapted to be cross browser compliant & accessible. I just wanted to share how one might go about this effect with CSS & JS and no other dependencies
+-->
+<div class="container">
+  <div class="card-column column-0">
+    <div class="card card-color-0">
+      <div class="border"></div>
+      <img src="https://img.alicdn.com/imgextra/i4/O1CN01qIrcXw1jrlexUBvQL_!!6000000004602-0-tps-1708-1490.jpg" />
+      <h1>金东法院项目3D地图</h1>
+    </div>
+    <div class="card card-color-2">
+      <div class="border"></div>
+      <img src="https://img.alicdn.com/imgextra/i3/O1CN015j3Xy81P4UjYx1WKV_!!6000000001787-0-tps-1626-1408.jpg" />
+      <h1>金东法院项目3D散点图 dark</h1>
+    </div>
+  </div>
+  <div class="card-column column-1">
+    <div class="card card-color-1">
+      <div class="border"></div>
+      <img src="https://img.alicdn.com/imgextra/i2/O1CN01ZalnwW22nANYWzl1J_!!6000000007164-0-tps-1468-1160.jpg" />
+      <h1>金东法院项目3D散点图 light</h1>
+    </div>
+    <div class="card card-color-3">
+      <div class="border"></div>
+      <img src="https://img.alicdn.com/imgextra/i4/O1CN01OUT0AP1qOdhHYHXxL_!!6000000005486-0-tps-1886-1055.jpg" />
+      <h1>杭仲项目案件信息总览</h1>
+    </div>
+  </div>
+</div>
+
+<div id="cover" class="cover"></div>
+
+<div id="open-content" class="open-content">
+  <a href="#" id="close-content" class="close-content"><span class="x-1"></span><span class="x-2"></span></a>
+  <img id="open-content-image" src="" />
+  <div class="text" id="open-content-text">
+  </div>
+</div>
+<!-- partial -->
+  <script  src="./index.js"></script>
+
+</body>
+</html>

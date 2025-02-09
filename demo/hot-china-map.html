@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>3D 热力地图</title>
+    <script type="text/javascript" src="https://cdn.bootcss.com/heatmap.js/2.0.2/heatmap.min.js"></script>
+    <style>
+        html {
+            font-size: 12px;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            background-color: #f2f2f2;
+            font-family: 'Encode Sans Condensed', sans-serif;
+        }
+
+        .full-content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        #container {
+            width: 100%;
+            height: 100%;
+        }
+        .heatmap-img {
+            position: relative;
+            width: 500px;
+            height: 500px
+        }
+    </style>
+<script defer src="hotChinaMap.js"></script></head>
+<body>
+<div class="full-content">
+    <div id="container"></div>
+    <div id="heatmap" class="heatmap-img"></div>
+    <div id="greymap" class="heatmap-img"></div>
+</div>
+</body>
+</html>
